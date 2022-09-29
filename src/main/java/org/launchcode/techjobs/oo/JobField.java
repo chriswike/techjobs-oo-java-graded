@@ -3,8 +3,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-//  Task 6 -  Refactor to DRY the Support Classes by including all code shared between Employer, Location, PositionType, and CoreCompetency
-//  Create a Base Class - JobField
+//  rRefactor to DRY the Support Classes by including all code shared between Employer, Location, PositionType, and CoreCompetency
 public abstract class JobField {
 
     //  Shared Fields:

@@ -22,7 +22,7 @@ public class JobTest {
     @Test
     public void testJobConstructorSetsAllFields() {
         Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        assertEquals("Product tester", testJob.getName());
+        assertEquals("Product tester", testJob.getName()); //don't need a getValue on a string
         assertEquals("ACME", testJob.getEmployer().getValue());
         assertEquals("Desert", testJob.getLocation().getValue());
         assertEquals("Quality control", testJob.getPositionType().getValue());
@@ -54,8 +54,8 @@ public class JobTest {
     }
     @Test
     public void testToStringHandlesEmptyField() {
-        Job job8 = new Job("", new Employer(""), new Location("St. Louis"), new PositionType(""), new CoreCompetency(""));
-        assertEquals('\n' + "ID: " + job8.getId() + "\nName: Data not available\nEmployer: Data not available\nLocation: St. Louis\nPosition Type: Data not available\nCore Competency: Data not available" + '\n', job8.toString());
+        Job job8 = new Job("", new Employer(""), new Location("Chicago"), new PositionType(""), new CoreCompetency(""));
+        assertEquals('\n' + "ID: " + job8.getId() + "\nName: Data not available\nEmployer: Data not available\nLocation: Chicago\nPosition Type: Data not available\nCore Competency: Data not available" + '\n', job8.toString());
     }
     @Test
     public void testToStringHandlesAllEmptyFieldsExceptId() {

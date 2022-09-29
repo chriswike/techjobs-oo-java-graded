@@ -6,7 +6,6 @@ public class Job {
 
     private int id;
     private static int nextId = 1;
-
     private String name;
     private Employer employer;
     private Location location;
@@ -33,7 +32,7 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-    //    5.1-4.b - Modified toString() if Job obj ONLY contains data for id field, return OOPS! This job does not seem to exist.
+    //    5.1-4 toString() if Job obj ONLY contains data for id field, return OOPS! This job does not seem to exist.
     @Override
     public String toString() {
 //      // if/else to add the Bonus check

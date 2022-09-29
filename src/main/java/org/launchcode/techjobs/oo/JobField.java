@@ -12,8 +12,6 @@ public abstract class JobField {
     private static int nextId = 1;
     private String value;
 
-
-
 //  Shared Constructors
 
     public JobField() {
@@ -25,8 +23,6 @@ public abstract class JobField {
         this();
         this.value = value;
     }
-
-
 
 //  Shared Getters/Setters:
 
@@ -44,7 +40,7 @@ public abstract class JobField {
 
 
 
-//  Shared Custom Methods:
+//  Shared Custom Methods
 
     @Override
     public String toString() {

@@ -36,7 +36,7 @@ public class Job {
     //    5.1-4.b - Modified toString() if Job obj ONLY contains data for id field, return OOPS! This job does not seem to exist.
     @Override
     public String toString() {
-//      // if/else to add the Bonus check in the if() conditional, then bumped the other if() conditionals into the else{}
+//      // if/else to add the Bonus check
         if (name.equals("") && employer.getValue().equals("") && location.getValue().equals("") && positionType.getValue().equals("") && coreCompetency.getValue().equals("")) {
             return "OOPS! This job does not exist!";
         } else {
@@ -66,11 +66,12 @@ public class Job {
 
 
     @Override
+    // Intellij auto-generated
     public boolean equals(Object o) {
-        if (this == o) return true;     //  Performs the reference check on the Object o
-        if (o == null || o.getClass() != getClass()) return false;    // Intellij auto-generated
-        Job job = (Job) o;                  // Cast o to be (Job) type called "that" for getters/setters to work
-        return id == job.id;             // intellij auto-generated
+        if (this == o) return true;     //  check on the o
+        if (o == null || o.getClass() != getClass()) return false;
+        Job job = (Job) o;
+        return id == job.id;
     }
 
     @Override

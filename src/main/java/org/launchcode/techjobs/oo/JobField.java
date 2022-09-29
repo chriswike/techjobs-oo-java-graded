@@ -14,7 +14,7 @@ public abstract class JobField {
 
 
 
-//  Shared Constructors:
+//  Shared Constructors
 
     public JobField() {
         this.id = nextId;
@@ -52,7 +52,7 @@ public abstract class JobField {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { //if the objects have the same ID they are equal
         if (this == o) {
             return true;
         }

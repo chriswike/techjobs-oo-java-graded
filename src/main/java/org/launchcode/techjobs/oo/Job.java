@@ -25,7 +25,7 @@ public class Job {
 
     //  Code a second constructor that takes 5 parameters in correct order and assigns values to name, employer, location, positionType, and coreCompetency. Also, calls the first constructor in order to initialize the id field.
     public Job (String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
-        this();         // calls the first empty constructor to init the 'id' field.
+        this();         // calls the first empty constructor to initialize the 'id' field.
         this.name = name;
         this.employer = employer;
         this.location = location;
@@ -68,7 +68,7 @@ public class Job {
     @Override
     // Intellij auto-generated
     public boolean equals(Object o) {
-        if (this == o) return true;     //  check on the o
+        if (this == o) return true;
         if (o == null || o.getClass() != getClass()) return false;
         Job job = (Job) o;
         return id == job.id;
@@ -124,7 +124,7 @@ public class Job {
     }
 
     // Generate a getter for the id field.
-    public int getId() {        // the setter for id is in the constructor above.
+    public int getId() {
         return id;
     }
 }
